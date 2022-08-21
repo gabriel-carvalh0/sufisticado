@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}home | {{ block.super }}{% endblock title %}  
+        
+  {% block container %}
+          
+      <div class="container">
+
+        <ul class="produtos">
+          <li>
+            <h2>telefone</h2>
+            <a href="#"><img id="capa" src="{% static 'img/error.png' %}"></a>
+            <a class="produto-descricao" href="#">telefone de alta qualidade! preço acessível</a>
+            <p class="preco-produto">R$1250,00</p>
+          </li>
+          <li>
+            <h2>notebook</h2>
+            <a href="#"><img id="capa" src="{% static 'img/error.png' %}"></a>
+            <a class="produto-descricao" href="#">notebook de alta qualidade! preço acessível</a>
+            <p class="preco-produto">R$2108,00</p>
+          </li>
+          <li>
+            <h2>PC</h2>
+            <a href="#"><img id="capa" src="{% static 'img/error.png' %}"></a>
+            <a class="produto-descricao" href="#">PC de alta qualidade! preço acessível</a>
+            <p class="preco-produto">R$4000,00</p>
+          </li>
+        </ul>
+
+      </div>
+  {% endblock container %}
